@@ -6,13 +6,24 @@ package lab0;
 public class Person {
 
 
-    private final static int MAX_AGE=120;
+    public final static int MAX_AGE = 120;
 
     private String name;
     private int age;
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public static void printPersonClassName() {
+        System.out.println("Person");
+    }
+
 
     public int getAge() {
+        var x = 4.0;
+        x = 4.5;
+
         return this.age;
     }
 

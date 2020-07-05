@@ -5,29 +5,17 @@ package lab0;
  */
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("hello Smadar!");
-        Person person1 = new Person();
-        Person person2 = new Person();
 
 
-        int numberOfPeople;
+        int x = 0;
 
-
-        person1.setAge(12);
-        person2.setAge(22);
-        if (person1.getAge() < 1) {
-            System.out.println();
-            System.out.println();
-            System.out.println();
+        for (String arg : args) {
+            if (x == 10) {
+                System.out.println(123);
+                continue;
+            }
+            System.out.println(456);
         }
-
-
-        PersonService personService = new PersonService();
-
-
-        personService.printMaturityStatus(person1);
-        personService.printMaturityStatus(person2);
-
 
     }
 }

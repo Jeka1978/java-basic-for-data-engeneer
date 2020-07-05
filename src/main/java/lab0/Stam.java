@@ -10,8 +10,6 @@ public class Stam {
         int maxAge = Person.MAX_AGE;
 
         Person person1 = new Person();
-        Person person7 = person1;
-
 
 
         person1.setAge(20);

@@ -13,6 +13,10 @@ public class Person {
 
 
 
+    public void printWeight(){
+        System.out.println(123);
+    }
+
 
     public void setName(String name) {
         this.name = name;

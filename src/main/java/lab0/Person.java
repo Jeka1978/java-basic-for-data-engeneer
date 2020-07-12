@@ -12,13 +12,14 @@ public class Person {
     private int age;
 
 
-
     public void printWeight(){
         System.out.println(123);
     }
 
 
     public void setName(String name) {
+
+
         this.name = name;
     }
 

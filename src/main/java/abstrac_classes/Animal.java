@@ -12,7 +12,7 @@ public abstract class Animal {
     public abstract void makeVoice();
 
 
-    public void printWeight(){
+    public final void printWeight(){
         System.out.println(this.weight);
     }
 

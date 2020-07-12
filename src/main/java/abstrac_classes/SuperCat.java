@@ -7,6 +7,9 @@ import polymorphism.Flyable;
  * @author Evgeny Borisov
  */
 public class SuperCat extends Cat implements Flyable, Creature {
+
+
+
     @Override
     public void makeVoice() {
         super.makeVoice();

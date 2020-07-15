@@ -6,9 +6,16 @@ import java.util.List;
  * @author Evgeny Borisov
  */
 public interface SoldierService {
-    int maxAge(List<Soldier> soldiers);
+    void addSoldier(Soldier soldier);
 
-    double avgAge(List<Soldier> soldiers);
+    int maxAge();
 
-    int sumAge(List<Soldier> soldiers);
+    double avgAge();
+
+    int sumAge();
+
+    void printAllNames();
+
+
+
 }

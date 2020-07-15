@@ -8,7 +8,8 @@ public class Soldier {
     private int age;
 
 
-    public Soldier(int age) {
+    public Soldier(String name, int age) {
+        this.name = name;
         this.age = age;
     }
 

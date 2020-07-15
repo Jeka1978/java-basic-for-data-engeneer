@@ -10,12 +10,20 @@ public class Main {
 
 
         SoldierService service = new SoldierServiceImpl();
+        service.addSoldier(new Soldier("John",50));
+        service.addSoldier(new Soldier("Jack",30));
+        service.addSoldier(new Soldier("Said",40));
+        service.addSoldier(new Soldier("Kate",30));
+        service.addSoldier(new Soldier("Soyer",30));
 
-        List<Soldier> soldiers = List.of(new Soldier(22), new Soldier(28), new Soldier(25));
+     
 
-        System.out.println(service.avgAge(soldiers));
-        System.out.println(service.sumAge(soldiers));
-        System.out.println(service.maxAge(soldiers));
+        service.printAllNames();
+
+        System.out.println(service.avgAge());
+        System.out.println(service.sumAge());
+        System.out.println(service.maxAge());
+
 
     }
 }

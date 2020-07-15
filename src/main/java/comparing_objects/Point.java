@@ -1,11 +1,13 @@
 package comparing_objects;
 
+import abstrac_classes.Animal;
+
 import java.util.Objects;
 
 /**
  * @author Evgeny Borisov
  */
-public class Point {
+public class Point extends Animal {
     private int x;
     private int y;
 
@@ -34,5 +36,10 @@ public class Point {
 
     public int getY() {
         return y;
+    }
+
+    @Override
+    public void makeVoice() {
+
     }
 }

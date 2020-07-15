@@ -16,20 +16,21 @@ public class SoldierServiceImplTest {
 
     private SoldierService service;
 
-    private List<Soldier> soldiers;
 
 
     public SoldierServiceImplTest() throws Exception {
-        soldiers = List.of(new Soldier(22), new Soldier(28), new Soldier(25));
         service = new SoldierServiceImpl();
-
+        service.addSoldier(new Soldier("",22));
+        service.addSoldier(new Soldier("",28));
+        service.addSoldier(new Soldier("",25));
     }
+
 
     @Test
     public void maxAge() {
 
 
-        int x = service.maxAge(soldiers);
+        int x = service.maxAge();
 
         Assert.assertEquals(28, x);
 
@@ -37,14 +38,14 @@ public class SoldierServiceImplTest {
 
     @Test
     public void avgAge() {
-        double x = service.avgAge(soldiers);
+        double x = service.avgAge();
         Assert.assertEquals(25,x,0);
 
     }
 
     @Test
     public void sumAge() {
-        int x = service.sumAge(soldiers);
+        int x = service.sumAge();
         Assert.assertEquals(75,x);
 
     }

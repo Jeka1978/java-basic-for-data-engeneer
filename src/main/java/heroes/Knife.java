@@ -10,5 +10,7 @@ public class Knife implements Weapon {
         int damage = RandomUtil.between(0, 5);
         System.out.println(attacker + " kick with knife for " + damage + " to " + defender);
         defender.decreaseHp(damage);
+
+
     }
 }

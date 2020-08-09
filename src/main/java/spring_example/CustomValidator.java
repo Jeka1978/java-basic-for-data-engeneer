@@ -1,5 +1,7 @@
 package spring_example;
 
+import org.springframework.stereotype.Service;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

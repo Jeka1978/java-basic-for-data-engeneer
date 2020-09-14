@@ -2,6 +2,8 @@ package lombok_examples;
 
 import lombok.*;
 
+
+import java.util.List;
 import java.util.Objects;
 
 /**
@@ -16,6 +18,8 @@ public class Customer {
     private String lastName;
     private int age;
     private String address;
+
+    private List<Beer> beers;
 
 
 }

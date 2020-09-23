@@ -11,9 +11,10 @@ import java.util.stream.Stream;
  */
 public class MainCollectorsExample {
     public static void main(String[] args) {
+        Customer jeka = Customer.builder().name("Jeka").age(42).build();
         Stream<Customer> stream = Stream.of(
                 Customer.builder().name("Shay Solomon").age(42).build(),
-                Customer.builder().name("Jeka").age(42).build(),
+                jeka,
                 Customer.builder().name("Avigal B").age(18).build(),
                 Customer.builder().name("Pavel").age(39).build(),
                 Customer.builder().name("Tamara").age(18).build(),
@@ -33,7 +34,9 @@ public class MainCollectorsExample {
         Map<Integer, Optional<Customer>> map = stream.collect(Collectors.groupingBy(Customer::getAge, Collectors.maxBy(Comparator.comparingInt(o -> o.getName().length()))));
         System.out.println("map = " + map);
 
-        //todo find a way to group not customers, but only their names
+
+        //todo find a way to group not customers, but only their names against the same age
+        // [(42=["Shay","Jeka"]),()]
 
 
 
